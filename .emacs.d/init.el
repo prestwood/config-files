@@ -28,6 +28,7 @@ There are two things you can do about this warning:
 (require 'evil)
 (evil-mode 1)
 
+;; Set theme
 (require 'color-theme-sanityinc-tomorrow)
 (color-theme-sanityinc-tomorrow-day)
 
@@ -42,6 +43,9 @@ There are two things you can do about this warning:
 
 ;; Highlight current line
 (global-hl-line-mode +1)
+
+;; Show column number
+(setq column-number-mode t)
 
 ;; Show line numbers
 (global-display-line-numbers-mode)
@@ -60,3 +64,7 @@ There are two things you can do about this warning:
 
 ;; Disable the bell
 (setq ring-bell-function 'ignore)
+
+;; Enable verison control diff
+(global-diff-hl-mode)
+(diff-hl-margin-mode t)
