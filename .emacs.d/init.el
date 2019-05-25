@@ -68,3 +68,13 @@ There are two things you can do about this warning:
 ;; Enable verison control diff
 (global-diff-hl-mode)
 (diff-hl-margin-mode t)
+
+;; Disable scroll bar
+(toggle-scroll-bar -1)
+
+;; Force case sensitive search
+(setq case-fold-search nil)
+(setq evil-ex-search-case 'sensitive)
+
+;; List number of search results
+(global-anzu-mode +1)
