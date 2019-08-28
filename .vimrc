@@ -64,6 +64,8 @@ set colorcolumn=81
 highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
 autocmd bufreadpre *.java setlocal colorcolumn=101
 autocmd bufreadpre *.java setlocal textwidth=101
+autocmd bufreadpre *.rs setlocal colorcolumn=101
+autocmd bufreadpre *.rs setlocal textwidth=101
 
 "hack to fix line length in rust files.
 au BufRead,BufNewFile *.rs setlocal textwidth=80
