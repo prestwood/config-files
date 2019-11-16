@@ -1,11 +1,24 @@
 {
     "workbench.colorTheme": "Dracula",
     "editor.minimap.enabled": false,
-    "vim.insertModeKeyBindings": [
+    "vim.insertModeKeyBindingsNonRecursive": [
         {
             "before": ["j", "j"],
             "after": ["<Esc>"]
+        },
+        {
+            "before": ["<C-l>"],
+            "after": ["C-o", "<Del>"]
         }
     ],
-    "editor.fontSize": 14
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["g", "g"],
+            "commands": [":w"]
+        },
+    ],
+    "editor.fontSize": 14,
+    "[rust]": {
+        "editor.rulers": [100]
+    }
 }
