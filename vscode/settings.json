@@ -20,5 +20,7 @@
     "editor.fontSize": 14,
     "[rust]": {
         "editor.rulers": [100]
-    }
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "rust-analyzer.enableEnhancedTyping": false
 }
