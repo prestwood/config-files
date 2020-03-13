@@ -65,10 +65,10 @@ set mouse=a
 " 80 char ruler:
 set colorcolumn=81
 highlight ColorColumn ctermbg=DarkGray guibg=DarkGray
-autocmd bufreadpre *.java setlocal colorcolumn=101
-autocmd bufreadpre *.java setlocal textwidth=101
-autocmd bufreadpre *.rs setlocal colorcolumn=101
-autocmd bufreadpre *.rs setlocal textwidth=101
+autocmd bufreadpre *.java setlocal textwidth=100
+autocmd Filetype java setlocal colorcolumn=101
+autocmd bufreadpre *.rs setlocal colorcolumn=99
+autocmd Filetype rust setlocal colorcolumn=100
 
 " show filename at bottom:
 set statusline=%f
