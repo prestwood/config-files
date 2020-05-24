@@ -43,9 +43,13 @@ filetype plugin indent on    " required
 
 " enable syntax highlighting:
 syntax on
-let g:dracula_italic = 0
-colorscheme dracula
+" let g:dracula_italic = 0
+" colorscheme dracula
 highlight Normal ctermbg=None
+let g:solarized_termcolors=256
+set t_Co=256
+set background=light
+colorscheme solarized
 
 " set tab to be 4 spaces
 set tabstop=4
@@ -64,7 +68,7 @@ set mouse=a
 
 " 80 char ruler:
 set colorcolumn=81
-highlight ColorColumn ctermbg=DarkGray guibg=DarkGray
+highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
 autocmd bufreadpre *.java setlocal textwidth=100
 autocmd Filetype java setlocal colorcolumn=101
 autocmd bufreadpre *.rs setlocal colorcolumn=99
@@ -73,7 +77,7 @@ autocmd Filetype rust setlocal colorcolumn=100
 " show filename at bottom:
 set statusline=%f
 set laststatus=2
-let g:airline_theme='dracula'
+let g:airline_theme='solarized'
 let g:airline_detect_whitespace=0
 
 " show line numbers:
